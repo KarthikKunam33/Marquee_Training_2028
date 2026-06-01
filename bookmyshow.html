@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyShow Clone</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+        body{
+            background:#f5f5f5;
+        }
+        .navbar{
+            background:#2b3148;
+            color:white;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:15px 50px;
+        }
+        .logo{
+            color:#f84464;
+            font-size:30px;
+            font-weight:bold;
+        }
+        .search-box{
+            flex:1;
+            margin:0 30px;
+        }
+        .search-box input{
+            width:100%;
+            padding:10px;
+            border:none;
+            border-radius:5px;
+        }
+        .nav-right{
+            display:flex;
+            align-items:center;
+            gap:15px;
+        }
+        .signin{
+            background:#f84464;
+            color:white;
+            border:none;
+            padding:8px 15px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+        .menu{
+            background:#1f2538;
+            color:white;
+            display:flex;
+            justify-content:space-between;
+            padding:10px 50px;
+        }
+        .menu-left,
+        .menu-right{
+            display:flex;
+            gap:20px;
+        }
+        .banner{
+            margin:20px auto;
+            width:90%;
+        }
+        .banner img{
+            width:100%;
+            border-radius:10px;
+        }
+        .section{
+            width:90%;
+            margin:30px auto;
+        }
+        .section-header{
+            display:flex;
+            justify-content:space-between;
+            margin-bottom:20px;
+        }
+        .section-header h2{
+            font-size:24px;
+        }
+        .section-header a{
+            color:red;
+            text-decoration:none;
+        }
+        .movie-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:20px;
+        }
+        .movie-card{
+            background:white;
+            border-radius:10px;
+            overflow:hidden;
+            transition:0.3s;
+        }
+        .movie-card:hover{
+            transform:translateY(-5px);
+        }
+        .movie-card img{
+            width:100%;
+            height:320px;
+            object-fit:cover;
+        }
+        .movie-info{
+            padding:10px;
+        }
+        .movie-info h3{
+            margin-bottom:5px;
+        }
+        .movie-info p{
+            color:gray;
+        }
+        .premiere{
+            background:#2b3148;
+            color:white;
+            padding:40px 0;
+            margin-top:40px;
+        }
+        .premiere h2{
+            width:90%;
+            margin:auto;
+            margin-bottom:20px;
+        }
+        .premiere-grid{
+            width:90%;
+            margin:auto;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:20px;
+        }
+        footer{
+            background:#333;
+            color:white;
+            padding:30px;
+            margin-top:40px;
+        }
+        .footer-content{
+            display:flex;
+            justify-content:space-around;
+            flex-wrap:wrap;
+            gap:20px;
+        }
+        footer h3{
+            margin-bottom:10px;
+        }
+        footer p{
+            color:#ccc;
+        }
+        @media(max-width:768px){
+            .navbar{
+                flex-direction:column;
+                gap:15px;
+            }
+            .menu{
+                flex-direction:column;
+                gap:10px;
+            }
+            .menu-left,
+            .menu-right{
+                flex-wrap:wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">bookmyshow</div>
+        <div class="search-box">
+            <input type="text"
+            placeholder="Search for Movies, Events, Sports and Activities">
+        </div>
+        <div class="nav-right">
+            <span>Vadodara</span>
+            <button class="signin">Sign In</button>
+        </div>
+    </nav>
+    <div class="menu">
+        <div class="menu-left">
+            <span>Movies</span>
+            <span>Stream</span>
+            <span>Events</span>
+            <span>Plays</span>
+            <span>Sports</span>
+            <span>Activities</span>
+        </div>
+        <div class="menu-right">
+            <span>Offers</span>
+            <span>Gift Cards</span>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="C:\Users\kunam\Pictures\1780057841447_chainsmokersweb.avif"alt="">
+    </div>
+    <section class="section">
+        <div class="section-header">
+            <h2>Recommended Movies</h2>
+            <a href="#">See All</a>
+        </div>
+        <div class="movie-grid">
+            <div class="movie-card">
+                <img src="C:\Users\kunam\Pictures\dhurandhar-the-revenge-et00478894-1772893645.avif">
+                <div class="movie-info">
+                    <h3>Dhurandhar 2</h3>
+                    <p>Action / Thriller</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="C:\Users\kunam\Pictures\guntur-kaaram-et00310760-1686726453.avif">
+                <div class="movie-info">
+                    <h3>Guntur Kaaram</h3>
+                    <p>Action / Drama</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="C:\Users\kunam\Pictures\IMG_20241203_134317_179.jpg">
+                <div class="movie-info">
+                    <h3>Pushpa 2</h3>
+                    <p>Drama / Action</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="C:\Users\kunam\Pictures\karuppu-et00450573-1753253510.avif">
+                <div class="movie-info">
+                    <h3>Karuppu</h3>
+                    <p>Action / Thriller</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="C:\Users\kunam\Pictures\leo-et00351731-1675663884.avif">
+                <div class="movie-info">
+                    <h3>Leo</h3>
+                    <p>Action</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="section-header">
+            <h2>The Best Of Live Events</h2>
+            <a href="#">See All</a>
+        </div>
+        <div class="movie-grid">
+            <div class="movie-card">
+                <img src="C:\Users\kunam\Pictures\kids-banner-desktop-collection-202503251132.avif">
+            </div>
+            <div class="movie-card">
+                <img src="C:\Users\kunam\Pictures\comedy-shows-collection-202211140440.avif">
+            </div>
+            <div class="movie-card">
+                <img src="C:\Users\kunam\Pictures\adventure-fun-collection-202211140440 (1).avif">
+            </div>
+            <div class="movie-card">
+                <img src="C:\Users\kunam\Pictures\theatre-shows-collection-202211140440.avif">
+            </div>
+        </div>
+    </section>
+    <section class="premiere">
+        <h2>Premieres</h2>
+        <div class="premiere-grid">
+            <div class="movie-card">
+                <img src="C:\Users\kunam\Pictures\et00482084-fgfnwfyzef-portrait.webp">
+            </div>
+            <div class="movie-card">
+                <img src="C:\Users\kunam\Pictures\et00499956-ldhkpppsnx-portrait.webp">
+            </div>
+            <div class="movie-card">
+                <img src="C:\Users\kunam\Pictures\et00482689-nletnheaxv-portrait.webp">
+            </div>
+            <div class="movie-card">
+                <img src="C:\Users\kunam\Pictures\et00480668-nuztuwczxk-portrait.webp">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Movies</h3>
+                <p>Now Showing</p>
+                <p>Coming Soon</p>
+            </div>
+            <div>
+                <h3>Events</h3>
+                <p>Comedy Shows</p>
+                <p>Concerts</p>
+            </div>
+            <div>
+                <h3>Support</h3>
+                <p>Contact Us</p>
+                <p>Help Center</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
