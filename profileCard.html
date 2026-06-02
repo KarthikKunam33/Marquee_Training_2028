@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Card Design</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container{
+    height:1000px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:black;
+}
+.card{
+    height:700px;
+    width:500px;
+    border:5px solid black;
+    border-radius:30px;
+    background-color:white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.top{
+    width:100%;
+    height:200px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: blue;
+    border-radius: 15px;
+}
+.circle{
+    height:200px;
+    width:180px;
+    border:3px solid black;
+    border-radius:50%;
+    margin-top:100px;
+    overflow: hidden;
+}
+.circle img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.name{
+    margin-top:60px;
+    height:60px;
+    width:150px;
+    font-size:30px;
+    text-align: center;
+
+}
+.info{
+    margin-bottom:40px;
+    height:50px;
+    width:300px;
+    font-size: 30px;
+    text-align:center;
+}
+.icons{
+    width:60%;
+    margin-bottom:40px;
+    display:flex;
+    justify-content:space-between;
+}
+.icon{
+    height:60px;
+    width:60px;
+    border:3px solid black;
+    border-radius:50%;
+    overflow: hidden;
+}
+.icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.buttons{
+    width:70%;
+    margin-bottom:25px;
+    display:flex;
+    justify-content:space-between;
+}
+.btn{
+    height:55px;
+    width:140px;
+    border:3px solid black;
+    border-radius:25px;
+    background-color: rgb(48, 48, 227);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.footer{
+    width:87%;
+    margin-top:10px;
+    display:flex;
+    justify-content:space-between;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <div class="top">
+            <div class="circle">
+                <img src="C:\Users\kunam\Pictures\6878296c3c782fcfa7d97e39ca0dd592.jpg">
+            </div>
+        </div>
+        <div class="name"><b>CodingLab</b></div>
+        <div class="info"><b>YouTuber & Bloger</b></div>
+        <div class="icons">
+            <div class="icon">
+                <img src="C:\Users\kunam\Pictures\Logo_de_Facebook.png">
+            </div>
+            <div class="icon">
+                <img src="C:\Users\kunam\Pictures\YouTube_full-color_icon_(2017).svg.webp">
+            </div>
+            <div class="icon">
+                <img src="C:\Users\kunam\Pictures\Instagram_icon.png">
+            </div>
+            <div class="icon">
+                <img src="C:\Users\kunam\Pictures\download.png">
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="btn">Subscribe</div>
+            <div class="btn">Message</div>
+        </div>
+        <div class="footer">
+            <img src="C:\Users\kunam\Pictures\Screenshots\Screenshot 2026-06-02 182837.png">
+        </div>
+    </div>
+</div>
+</body>
+</html>
